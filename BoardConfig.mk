@@ -15,7 +15,7 @@
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/sagit
+DEVICE_PATH := device/xiaomi/chiron
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -65,7 +65,7 @@ BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := sagit
+TARGET_OTA_ASSERT_DEVICE := chiron
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -227,7 +227,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_sagit
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_chiron
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -266,4 +266,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/xiaomi/sagit/BoardConfigVendor.mk
+-include vendor/xiaomi/chiron/BoardConfigVendor.mk
